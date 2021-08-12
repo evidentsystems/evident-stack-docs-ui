@@ -2677,4 +2677,10 @@ footer.footer {
     color: inherit;
   }
 }
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 /*# sourceMappingURL=site.css.map */
