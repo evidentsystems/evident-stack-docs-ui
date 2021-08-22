@@ -1,5 +1,7 @@
+build/
 public/
 node_modules/
+yarn-error.log
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
