@@ -1,0 +1,31 @@
+name: Build UI bundle and upload as release asset
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  deploy:
+    name: Build theme and upload as release asset
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        # with:
+        #   lfs: true
+      # - name: Checkout LFS objects
+      #   run: git lfs checkout
+
+      - name: Build
+        run: make
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./build/ui-bundle.zip
+          asset_name: ui-bundle.zip
+          asset_content_type: application/zip
