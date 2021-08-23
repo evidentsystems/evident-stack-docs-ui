@@ -8,6 +8,7 @@ html {
   box-sizing: border-box;
   font-size: var(--body-font-size);
   height: 100%;
+  font-family: var(--body-font-family) !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -69,11 +70,6 @@ button {
 button::-moz-focus-inner {
   border: none;
   padding: 0;
-}
-
-summary {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 }
 
 table {

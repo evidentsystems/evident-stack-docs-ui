@@ -1,46 +1,64 @@
-<header class="header">
-  <nav class="navbar">
-    <div class="navbar-brand hidden">
-      <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">{{site.title}}</a>
-      <button class="navbar-burger" data-target="topbar-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<header class="w-full fixed top-0 bg-white z-10 shadow-md">
+  <nav class="relative">
+    <div class="lg:px-8 px-4 pt-2 pb-4">
+      <div class="flex justify-between items-center">
+        <a class="" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">
+          <img src="{{{uiRootPath}}}/img/onoteDocsLogo.svg" alt="oNote" width="161.13" height="auto" />
+        </a>
+        <form class="hidden lg:block">
+           <div class="box-border rounded-md w-96 border border-gray-300 bg-white px-4 py-1 flex whitespace-nowrap">
+              <span class="w-auto flex justify-end items-center">
+                  <img src="{{{uiRootPath}}}/img/ico-search.svg" alt="search" width="auto" height="14" />
+              </span>
+              <input class="outline-none placeholder-gray-500::placeholder w-full rounded px-4 text-sm" type="text" placeholder="Search Docs">
+          </div>
+        </form>
+        <button class="navbar-burger" data-target="topbar-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
-    <div id="topbar-nav" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Products</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Product A</a>
-            <a class="navbar-item" href="#">Product B</a>
-            <a class="navbar-item" href="#">Product C</a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Services</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Service A</a>
-            <a class="navbar-item" href="#">Service B</a>
-            <a class="navbar-item" href="#">Service C</a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Resources</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Resource A</a>
-            <a class="navbar-item" href="#">Resource B</a>
-            <a class="navbar-item" href="#">Resource C</a>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <span class="control">
-            <a class="button is-primary" href="#">Download</a>
-          </span>
+    <div id="topbar-nav" class="navbar-menu px-8">
+      <div class="w-full flex justify-between items-center">
+        <ul id="" class="text-sm lg:flex space-x-8">
+          <li class="">
+            <a class="navbar-item focus:border-b-2 focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Home</p></a>
+          </li>
+          <li class="">
+            <a class="navbar-item focus:border-b-2 focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Project XYZ</p></a>
+          </li>
+          <li class="">
+            <a class="navbar-item focus:border-b-2 focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Services</p></a>
+          </li>
+          <li class="">
+            <a class="navbar-item focus:border-b-2 focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Resources</p></a>
+          </li>
+        </ul>
+        <div style="padding-bottom: 10px;" class="hidden lg:flex items-center lg:ml-12">
+            <a href="#" class="text-sm whitespace-nowrap text-body-1 hover:text-secondary mr-8 transition duration-300 ease-in-out inline-flex no-underline">Log In</a>
+            {{!-- <a href="#" class="text-sm whitespace-nowrap text-sm rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
+                <span class="ml-1"><svg height="8.083" viewBox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"/></svg></span>
+            </a> --}}
+            <a href="#" class="text-sm whitespace-nowrap rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
+                <span class="ml-1"><svg height="8.083" viewBox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"/></svg></span>
+            </a>
         </div>
       </div>
     </div>
+
+    {{!-- <div id="topbar-nav" class="navbar-menu">
+      <div class="">
+        <a class="navbar-item" href="#">Home</a>
+        <a class="navbar-link" href="#">Products</a>
+        <a class="navbar-link" href="#">Services</a>
+        <a class="navbar-link" href="#">Resources</a>
+      </div>
+    </div> --}}
+
+
+
+
   </nav>
 </header>

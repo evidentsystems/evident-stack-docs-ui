@@ -1,11 +1,25 @@
 # docs-ui
-Repository that provides the Antora UI and theme for the oNote documentation site.
 
-This is a backup plan if there isn't time to implement reuse of Twig templates for the main oNote web site.
+Repository that provides the Antora UI and theme for the oNote
+documentation site, based on the [default Antora UI
+Bundle](https://docs.antora.org/antora-ui-default/) modified to use
+Tailwind CSS.
 
-Antora UI theme uses Handlebars templates.
+## Usage
 
-For more information, see https://docs.antora.org/antora-ui-default/.
+During development, run and auto-reloading preview via:
+
+``` sh
+make preview
+```
+
+When ready to build, run the default make target (which passes through to `make clean build`):
+
+``` sh
+make
+```
+
+## References
 
 Also look to the Couchbase UI repo for inspiration: https://github.com/couchbase/docs-ui/
 
