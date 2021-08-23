@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/xxv0hnj.css");
+
 :root {
   /* colors */
   --color-white: #fff;
@@ -16,25 +18,42 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
+  --color-dark-1: #002B36;
+  --color-dark-2: #073642;
+  --color-body-1: #586E75;
+  --color-body-2: #657B83;
+  --color-body-3: #839496;
+  --color-body-4: #93A1A1;
+  --color-body-5: #CCCCCC;
+  --color-body-6: #333333;
+  --color-body-7: #666666;
+  --color-border-light: #E6E6E6;
+  --color-border-dark: #586e75;
+  --color-primary: #FB8C3A;
+  --color-secondary: #2FB6E1;
+  --color-secondary-red: #E15B2F;
+  --color-secondary-green: #5FB831;
+  --color-gray-theme: #F5F5F5;
   /* fonts */
-  --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
-  --body-font-size: 1.0625em; /* 17px */
-  --body-font-size--desktop: 1.125em; /* 18px */
-  --body-font-size--print: 0.9375em; /* 15px */
-  --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
-  --body-font-weight-bold: 500;
+  --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
+  --body-font-size: 1em; 
+  --body-font-size--desktop: 1em; 
+  --body-font-size--print: 0.9375em; 
+
+  --body-line-height: 1.5;
+  --body-font-color: var(--color-body-6);
+  --body-font-family: "hero-new", "Roboto", sans-serif;
+  --body-font-weight-bold: bold;
   --monospace-font-family: "Roboto Mono", monospace;
-  --monospace-font-weight-bold: 500;
+  --monospace-font-weight-bold: bold;
   /* base */
   --body-background: var(--color-white);
-  --panel-background: var(--color-smoke-30);
-  --panel-border-color: var(--color-smoke-90);
+  --panel-background: var(--color-gray-theme);
+  --panel-border-color: var(--color-border-light);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
-  --navbar-font-color: var(--color-white);
+  --navbar-background: var(--color-white);
+  --navbar-font-color: var(--color-body-6);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-white);
   --navbar-button-border-color: var(--panel-border-color);
@@ -47,14 +66,14 @@
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
   --nav-line-height: 1.35;
-  --nav-heading-font-color: var(--color-jet-30);
+  --nav-heading-font-color: var(--color-body-1);
   --nav-muted-color: var(--color-gray-70);
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
-  --toolbar-font-color: var(--color-gray-70);
+  --toolbar-font-color: var(--color-body-1);
   --toolbar-muted-color: var(--color-gray-30);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
@@ -76,12 +95,12 @@
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--color-jet-80);
+  --heading-font-color: var(--color-body-6);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
-  --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --section-divider-color: var(--color-border-light);
+  --link-font-color: var(--color-secondary);
+  --link_hover-font-color: var(--color-secondary);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);
@@ -110,7 +129,7 @@
   /* toc */
   --toc-font-color: var(--nav-muted-color);
   --toc-heading-font-color: var(--doc-font-color);
-  --toc-border-color: var(--panel-border-color);
+  --toc-border-color: var(--color-border-light);
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
@@ -118,7 +137,7 @@
   --footer-font-color: var(--color-gray-70);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: calc(90 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
