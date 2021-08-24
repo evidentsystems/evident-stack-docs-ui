@@ -162,7 +162,7 @@ body {
 
   .navbar-menu a.navbar-item:hover,
   .navbar-menu .navbar-link:hover {
-    background: var(--navbar-menu_hover-background);
+    /* background: var(--navbar-menu_hover-background); */
   }
 }
 
@@ -259,6 +259,6 @@ body {
   }
 
   .navbar-dropdown a.navbar-item:hover {
-    background: var(--navbar-menu_hover-background);
+    /* background: var(--navbar-menu_hover-background); */
   }
 }

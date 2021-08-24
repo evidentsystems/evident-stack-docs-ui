@@ -54,5 +54,8 @@
     "typeface-roboto-mono": "1.1.13",
     "vinyl-buffer": "~1.0",
     "vinyl-fs": "~3.0"
+  },
+  "dependencies": {
+    "yarn": "^1.22.11"
   }
 }
