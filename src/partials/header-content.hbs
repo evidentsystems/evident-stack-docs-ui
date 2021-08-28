@@ -22,27 +22,23 @@
     </div>
     <div id="topbar-nav" class="navbar-menu px-8">
       <div class="w-full flex justify-between items-center">
-        <ul id="" class="text-sm lg:flex lg:space-x-8">
-          <li class="">
-            <a class="navbar-item lg:focus:border-b-2 lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
-              href="#"><p class="pb-4">Home</p></a>
+        <ul id="" class="text-sm lg:flex">
+          <li class="navbar-item lg:mr-8">
+            <a class="navbar-link box-border lg:border-b-2 lg:border-white lg:focus:text-secondary lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
+              href="{{{or site.url (or siteRootUrl siteRootPath)}}}"><p class="pb-4">Home</p></a>
           </li>
-          <li class="">
-            <a class="navbar-item lg:focus:border-b-2 lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Project XYZ</p></a>
-          </li>
-          <li class="">
-            <a class="navbar-item lg:focus:border-b-2 lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Services</p></a>
-          </li>
-          <li class="">
-            <a class="navbar-item lg:focus:border-b-2 lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" href="#"><p class="pb-4">Resources</p></a>
+          <li class="navbar-item lg:mr-8">
+            <a class="navbar-link box-border lg:border-b-2 lg:border-white lg:focus:text-secondary lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
+              href="{{{relativize (resolvePageURL 'onote-docs::index.adoc')}}}">
+              <p class="pb-4">oNote User Guide</p></a>
           </li>
         </ul>
         <div style="padding-bottom: 10px;" class="hidden lg:flex items-center lg:ml-12">
-            <a href="#" class="text-sm whitespace-nowrap text-body-1 hover:text-secondary mr-8 transition duration-300 ease-in-out inline-flex no-underline">Log In</a>
+            <a href="https://app.onote.com/sign-in" target="_blank" class="text-sm whitespace-nowrap text-body-1 hover:text-secondary mr-8 transition duration-300 ease-in-out inline-flex no-underline">Log In</a>
             {{!-- <a href="#" class="text-sm whitespace-nowrap text-sm rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
                 <span class="ml-1"><svg height="8.083" viewBox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"/></svg></span>
             </a> --}}
-            <a href="#" class="text-sm whitespace-nowrap rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
+            <a href="https://app.onote.com/sign-up/" target="_blank" class="text-sm whitespace-nowrap rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
                 <span class="ml-1"><svg height="8.083" viewBox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"/></svg></span>
             </a>
         </div>
