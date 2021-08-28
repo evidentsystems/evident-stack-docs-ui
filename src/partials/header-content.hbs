@@ -1,3 +1,24 @@
+<script>
+window.onload = function() { 
+    var all_links = document.getElementById("docsMenu").getElementsByTagName("a"),
+        i=0, len=all_links.length,
+        full_path = location.href.split('#')[0]; //Ignore hashes?
+
+    // Loop through each link.
+    for(; i<len; i++) {
+        if(all_links[i].href.split("#")[0] == full_path) {
+            all_links[i].className += " active";
+        }
+    }
+}
+</script>
+<style>
+ .navbar-link.active { 
+   color: #2FB6E1 !important;
+   border-bottom: 2px solid #2FB6E1 !important;
+ }
+</style>
+
 <header class="w-full fixed top-0 bg-white z-10 shadow-md">
   <nav class="relative">
     <div class="lg:px-8 px-4 pt-2 lg:pb-4 pb-2">
@@ -22,13 +43,14 @@
     </div>
     <div id="topbar-nav" class="navbar-menu px-8">
       <div class="w-full flex justify-between items-center">
-        <ul id="" class="text-sm lg:flex">
+        <ul id="docsMenu" class="text-sm lg:flex">
           <li class="navbar-item lg:mr-8">
-            <a class="navbar-link box-border lg:border-b-2 lg:border-white lg:focus:text-secondary lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
-              href="{{{or site.url (or siteRootUrl siteRootPath)}}}"><p class="pb-4">Home</p></a>
+            <a class="navbar-link box-border lg:border-b-2 lg:border-white lg:focus:text-secondary lg:focus:border-secondary lg:active:text-secondary lg:active:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
+              {{!-- href="{{{or site.url (or siteRootUrl siteRootPath)}}}"><p class="pb-4">Home</p></a> --}}
+              href="{{{relativize (resolvePageURL 'onote-docs::home.adoc')}}}"><p class="pb-4">Home</p></a>
           </li>
           <li class="navbar-item lg:mr-8">
-            <a class="navbar-link box-border lg:border-b-2 lg:border-white lg:focus:text-secondary lg:focus:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
+            <a class="navbar-link box-border lg:border-b-2 lg:border-white lg:focus:text-secondary lg:focus:border-secondary lg:active:text-secondary lg:active:border-secondary mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
               href="{{{relativize (resolvePageURL 'onote-docs::index.adoc')}}}">
               <p class="pb-4">oNote User Guide</p></a>
           </li>
@@ -44,8 +66,6 @@
         </div>
       </div>
     </div>
-
-
-
   </nav>
 </header>
+
