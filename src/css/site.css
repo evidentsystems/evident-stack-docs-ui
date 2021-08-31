@@ -21,3 +21,7 @@
 @import "tailwindcss/utilities";
 
 
+ol, ul {
+    list-style: disc;
+}
+

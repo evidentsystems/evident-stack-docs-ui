@@ -39,6 +39,10 @@ a:active {
   background-color: none;
 }
 
+ol, ul {
+  list-style: disc;
+}
+
 code,
 kbd,
 pre {
