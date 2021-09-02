@@ -56,21 +56,21 @@ body {
 }
 
 .navbar-burger span {
-  background-color: var(--navbar-font-color); 
-  height: 1.5px;
+  background-color: var(--navbar-font-color);
+  height: 2px;
   width: 1rem;
 }
 
 .navbar-burger:not(.is-active) span {
-  transition: transform ease-out 0.25s, opacity 0s 0.25s, margin-top ease-out 0.25s 0.25s;
+  /* transition: transform ease-out 0.25s, opacity 0s 0.25s, margin-top ease-out 0.25s 0.25s; */
 }
 
 .navbar-burger span + span {
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
 }
 
 .navbar-burger.is-active span + span {
-  margin-top: -1.5px;
+  margin-top: -2px;
 }
 
 .navbar-burger.is-active span:nth-child(1) {

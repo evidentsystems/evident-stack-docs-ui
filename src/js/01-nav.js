@@ -3,7 +3,7 @@
 
   var SECT_CLASS_RX = /^sect(\d)$/
 
-  var navContainer = document.querySelector('.nav-container')
+  var navContainer = document.querySelector('.nav-container') 
   var navToggle = document.querySelector('.nav-toggle')
 
   navToggle.addEventListener('click', showNav)
@@ -110,7 +110,7 @@
   }
 
   function showNav (e) {
-    if (navToggle.classList.contains('is-active')) return hideNav(e)
+    if (navToggle.classList.contains('is-active')) return hideNav(e)  
     trapEvent(e)
     var html = document.documentElement
     html.classList.add('is-clipped--nav')

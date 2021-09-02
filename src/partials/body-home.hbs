@@ -1,7 +1,7 @@
 <div class="home">
     <main class="container h-screen lg:max-w-[1280px] mx-auto h-auto relative py-16">
-        <div class="">
-            <h1 class="text-center pb-4">Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary-red">oNote</span> documentation</h1>
+        <div class="px-4">
+            <h1 class="text-center pb-4 leading-[1.27]">Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary-red">oNote</span> documentation</h1>
             <p class="text-center text-body-1 text-[18px]">To get started, take the <a class="no-underline text-secondary hover:text-body-4 transform duration-300 ease-in-out" href="{{{relativize (resolvePageURL 'ui-tour.adoc')}}}">comprehensive tour</a>.</p>
         </div>
         <div class="my-16">
@@ -59,3 +59,7 @@
         </div>
     </main>
 </div>
+
+{{!-- Temporary navbar JS fix on homepage --}}
+<span class="nav-toggle"></span>
+<div class="nav-container"></div>

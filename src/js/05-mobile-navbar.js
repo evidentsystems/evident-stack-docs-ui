@@ -3,7 +3,7 @@
 
   var navbarBurger = document.querySelector('.navbar-burger')
   if (!navbarBurger) return
-  navbarBurger.addEventListener('click', toggleNavbarMenu.bind(navbarBurger))
+  navbarBurger.addEventListener('click', toggleNavbarMenu.bind(navbarBurger)) 
 
   function toggleNavbarMenu (e) {
     e.stopPropagation() // trap event
@@ -18,3 +18,4 @@
     }
   }
 })()
+
