@@ -2,7 +2,7 @@ antoraVersion: '1.0.0'
 site:
   url: http://localhost:5252
   title: Brand Docs
-  start_page: onote-docs:ROOT:home.adoc
+  start_page: onote-docs::home.adoc
   homeUrl: &home_url /xyz/5.2/index.html
   components:
   - name: abc
