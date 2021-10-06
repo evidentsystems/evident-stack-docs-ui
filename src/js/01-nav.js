@@ -3,7 +3,7 @@
 
   var SECT_CLASS_RX = /^sect(\d)$/
 
-  var navContainer = document.querySelector('.nav-container') 
+  var navContainer = document.querySelector('.nav-container')
   var navToggle = document.querySelector('.nav-toggle')
 
   navToggle.addEventListener('click', showNav)
@@ -11,6 +11,7 @@
 
   var menuPanel = navContainer.querySelector('[data-panel=menu]')
   if (!menuPanel) return
+  var explorePanel = navContainer.querySelector('[data-panel=explore]')
   var nav = navContainer.querySelector('.nav')
 
   var currentPageItem = menuPanel.querySelector('.is-current-page')
@@ -32,12 +33,14 @@
     }
   })
 
-  nav.querySelector('[data-panel=explore] .context').addEventListener('click', function () {
-    // NOTE logic assumes there are only two panels
-    find(nav, '[data-panel]').forEach(function (panel) {
-      panel.classList.toggle('is-active')
+  if (explorePanel) {
+    explorePanel.querySelector('.context').addEventListener('click', function () {
+      // NOTE logic assumes there are only two panels
+      find(nav, '[data-panel]').forEach(function (panel) {
+        panel.classList.toggle('is-active')
+      })
     })
-  })
+  }
 
   // NOTE prevent text from being selected by double click
   menuPanel.addEventListener('mousedown', function (e) {
@@ -110,7 +113,7 @@
   }
 
   function showNav (e) {
-    if (navToggle.classList.contains('is-active')) return hideNav(e)  
+    if (navToggle.classList.contains('is-active')) return hideNav(e)
     trapEvent(e)
     var html = document.documentElement
     html.classList.add('is-clipped--nav')
@@ -152,4 +155,3 @@
     return el && selector ? el[el.matches ? 'matches' : 'msMatchesSelector'](selector) && el : el
   }
 })()
-
