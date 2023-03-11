@@ -18,31 +18,32 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
-  --color-dark-1: #002B36;
+  --color-dark-1: #002b36;
   --color-dark-2: #073642;
-  --color-body-1: #586E75;
-  --color-body-2: #657B83;
+  --color-body-1: #586e75;
+  --color-body-2: #657b83;
   --color-body-3: #839496;
-  --color-body-4: #93A1A1;
-  --color-body-5: #CCCCCC;
+  --color-body-4: #93a1a1;
+  --color-body-5: #cccccc;
   --color-body-6: #333333;
   --color-body-7: #666666;
-  --color-border-light: #E6E6E6;
+  --color-border-light: #e6e6e6;
   --color-border-dark: #586e75;
-  --color-primary: #FB8C3A;
-  --color-secondary: #2FB6E1;
-  --color-secondary-red: #E15B2F;
-  --color-secondary-green: #5FB831;
-  --color-gray-theme: #F5F5F5;
+  --color-primary: #fb8c3a;
+  --color-secondary: #2fb6e1;
+  --color-secondary-red: #e15b2f;
+  --color-secondary-green: #5fb831;
+  --color-gray-theme: #f5f5f5;
   /* fonts */
   --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
-  --body-font-size: 1em; 
-  --body-font-size--desktop: 1em; 
-  --body-font-size--print: 0.9375em; 
+  --body-font-size: 1em;
+  --body-font-size--desktop: 1em;
+  --body-font-size--print: 0.9375em;
 
   --body-line-height: 1.5;
   --body-font-color: var(--color-body-6);
-  --body-font-family: "hero-new", "Roboto", sans-serif;
+  --body-font-family: "lato", "Roboto", sans-serif;
+  --header-font-family: "lato", "Roboto", sans-serif;
   --body-font-weight-bold: bold;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: bold;
@@ -125,7 +126,11 @@
   --sidebar-background: var(--color-smoke-90);
   --table-border-color: var(--panel-border-color);
   --table-stripe-background: var(--panel-background);
-  --table-footer-background: linear-gradient(to bottom, var(--color-smoke-70) 0%, var(--color-white) 100%);
+  --table-footer-background: linear-gradient(
+    to bottom,
+    var(--color-smoke-70) 0%,
+    var(--color-white) 100%
+  );
   /* toc */
   --toc-font-color: var(--nav-muted-color);
   --toc-heading-font-color: var(--doc-font-color);

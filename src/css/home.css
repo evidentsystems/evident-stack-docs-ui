@@ -1,13 +1,13 @@
 .home h1 {
-    font-family: var(--body-font-family);
-    font-weight: var(--body-font-weight-bold);
-    font-size: calc(32 / var(--rem-base) * 1rem);
-    color: var(--color-body-1);
+  font-family: var(--header-font-family);
+  font-weight: var(--body-font-weight-bold);
+  font-size: calc(32 / var(--rem-base) * 1rem);
+  color: var(--color-body-1);
 }
 
 .home h2 {
-    font-family: var(--body-font-family);
-    font-weight: var(--body-font-weight-bold);
-    font-size: calc(32 / var(--rem-base) * 1rem);
-    color: var(--color-body-1);
+  font-family: var(--header-font-family);
+  font-weight: var(--body-font-weight-bold);
+  font-size: calc(32 / var(--rem-base) * 1rem);
+  color: var(--color-body-1);
 }

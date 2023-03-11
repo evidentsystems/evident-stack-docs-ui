@@ -1,12 +1,12 @@
 {
-  "name": "onote-docs-ui",
-  "description": "Antora UI bundle for the oNote documentation site.",
-  "homepage": "https://github.com/evidentsystems/docs-ui.git",
+  "name": "evident-stack-docs-ui",
+  "description": "Antora UI bundle for the Evident Stack documentation site.",
+  "homepage": "https://github.com/evidentsystems/evident-stack-docs-ui.git",
   "private": true,
   "license": "unlicensed",
   "repository": {
     "type": "git",
-    "url": "https://github.com/evidentsystems/docs-ui.git"
+    "url": "https://github.com/evidentsystems/evident-stack-docs-ui.git"
   },
   "engines": {
     "node": ">= 8.0.0"

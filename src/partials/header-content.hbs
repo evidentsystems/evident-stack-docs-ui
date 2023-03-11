@@ -1,6 +1,6 @@
 <style>
  @media (min-width: 1024px) {
-  .active { 
+  .active {
     color: #2FB6E1 !important;
     border-bottom-color: #2FB6E1 !important;
   }
@@ -11,17 +11,9 @@
   <nav class="relative">
     <div class="lg:px-8 px-4 pt-2 lg:pb-4 pb-2">
       <div class="flex justify-between items-center">
-        <a class="" href="https://onote.com">
-          <img src="{{{uiRootPath}}}/img/onoteDocsLogo.svg" alt="oNote" width="161.13" height="auto" />
+        <a class="" href="https://evidentstack.com">
+          <img src="{{{uiRootPath}}}/img/evidentStackDocsLogo.svg" alt="Evident Stack" width="187.4915px" height="auto"/>
         </a>
-        {{!-- <form class="hidden lg:block">
-           <div class="box-border rounded-md w-96 border border-gray-300 bg-white px-4 py-1 flex whitespace-nowrap">
-              <span class="w-auto flex justify-end items-center">
-                  <img src="{{{uiRootPath}}}/img/ico-search.svg" alt="search" width="auto" height="14" />
-              </span>
-              <input class="outline-none placeholder-gray-500::placeholder w-full rounded px-4 text-sm" type="text" placeholder="Search Docs">
-          </div>
-        </form> --}}
         <button class="navbar-burger" data-target="topbar-nav">
           <span></span>
           <span></span>
@@ -33,22 +25,18 @@
       <div class="w-full flex justify-between items-center">
         <ul id="docsMenu" class="text-sm lg:flex">
           <li class="navbar-item lg:mr-8">
-            <a id="home" class="navbar-link border-0 box-border lg:border-b-2 lg:border-white mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
-              {{!-- href="{{{or site.url (or siteRootUrl siteRootPath)}}}"><p class="pb-4">Home</p></a> --}}
-              href="{{{relativize (resolvePageURL 'onote-docs::home.adoc')}}}"><p class="pb-4">Home</p></a>
+            <a id="home" class="navbar-link border-0 box-border lg:border-b-2 lg:border-white mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline"
+              href="{{{relativize (resolvePageURL 'evident-stack-docs::home.adoc')}}}"><p class="pb-4">Home</p></a>
           </li>
           <li class="navbar-item lg:mr-8">
-            <a id="onoteUserGuide" class="navbar-link border-0 box-border lg:border-b-2 lg:border-white mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline" 
-              href="{{{relativize (resolvePageURL 'onote-docs::index.adoc')}}}">
-              <p class="pb-4">oNote User Guide</p></a>
+            <a id="evidentStackUserGuide" class="navbar-link border-0 box-border lg:border-b-2 lg:border-white mx-0 text-sm whitespace-nowrap text-body-1 hover:text-secondary transition duration-300 ease-in-out inline-flex no-underline"
+              href="{{{relativize (resolvePageURL 'evident-stack-docs::index.adoc')}}}">
+              <p class="pb-4">Evident Design User Guide</p></a>
           </li>
         </ul>
         <div style="padding-bottom: 10px;" class="hidden lg:flex items-center lg:ml-12">
-            <a href="https://app.onote.com/sign-in" target="_blank" class="text-sm whitespace-nowrap text-body-1 hover:text-secondary mr-8 transition duration-300 ease-in-out inline-flex no-underline">Log In</a>
-            {{!-- <a href="#" class="text-sm whitespace-nowrap text-sm rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
-                <span class="ml-1"><svg height="8.083" viewBox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"/></svg></span>
-            </a> --}}
-            <a href="https://app.onote.com/sign-up" target="_blank" class="text-sm whitespace-nowrap rounded-md inline-flex items-center px-4 py-1 text-white hover:text-white transition duration-300 ease-in-out bg-gradient-to-b from-primary to-secondary-red hover:bg-gradient-to-b hover:from-secondary-red hover:to-secondary-red uppercase mr-4 no-underline">Sign Up
+            <a href="https://app.evidentstack.com/sign-in" target="_blank" class="text-sm whitespace-nowrap text-body-1 hover:text-secondary mr-8 transition duration-300 ease-in-out inline-flex no-underline">Log In</a>
+            <a href="https://app.evidentstack.com/sign-up" target="_blank" class="h-[30px] font-primary font-medium rounded uppercase ring-1 h-auto min-h-0 transition duration-200 ease-in text-white hover:text-white bg-gradient-to-t from-stack-brand-700 via-stack-brand-500 to-stack-brand-300 hover:to-stack-brand-700 hover:via-stack-brand-700 hover:from-stack-brand-700 ring-stack-brand-500 px-4 py-1.5 text-xs brandDesignPrimary flex items-center">Sign Up
                 <span class="ml-1"><svg height="8.083" viewBox="0 0 4.975 8.083" width="4.975" xmlns="http://www.w3.org/2000/svg"><path d="m1500 413.262-4-4 .836-.836 3.164 3.164 3.164-3.164.836.836z" fill="#FFFFFF" transform="matrix(-.017 -1 1 -.017 -382.116 1510.983)"/></svg></span>
             </a>
         </div>

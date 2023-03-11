@@ -1,33 +1,50 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   important: true,
-  mode: 'jit',
-  purge: ['**/*.hbs'],
-  darkMode: 'media', // or 'media' or 'class'
+  mode: "jit",
+  purge: ["**/*.hbs"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'dark-1': '#002B36',
-        'dark-2': '#073642',
-        'body-1': '#586E75',
-        'body-2': '#657B83',
-        'body-3': '#839496',
-        'body-4': '#93A1A1',
-        'body-5': '#CCCCCC',
-        'body-6': '#333333',
-        'primary': '#FB8C3A',
-        'secondary': '#2FB6E1',
-        'secondary-red': '#E15B2F',
-        'border-light': '#E6E6E6',
-        'border-dark': '#586E75',
-        'gradient': '#93A1A1'
-      }  
+        "design-brand-100": "#FEEDE1",
+        "design-brand-200": "#FEDCC3",
+        "design-brand-300": "#FDC7A0",
+        "design-brand-400": "#FCAC73",
+        "design-brand-500": "#FB8C3A",
+        "design-brand-600": "#FA710F",
+        "design-brand-700": "#E16005",
+        "design-brand-800": "#B94F04",
+        "design-brand-900": "#873A03",
+        "stack-brand-100": "#E0F4FB",
+        "stack-brand-200": "#C1EAF6",
+        "stack-brand-300": "#98DCF0",
+        "stack-brand-400": "#6CCCEA",
+        "stack-brand-500": "#2FB6E1",
+        "stack-brand-600": "#1EA4CD",
+        "stack-brand-700": "#1A92B7",
+        "stack-brand-800": "#167998",
+        "stack-brand-900": "#0F566B",
+        "dark-1": "#002B36",
+        "dark-2": "#073642",
+        "body-1": "#586E75",
+        "body-2": "#657B83",
+        "body-3": "#839496",
+        "body-4": "#93A1A1",
+        "body-5": "#CCCCCC",
+        "body-6": "#333333",
+        primary: "#FB8C3A",
+        secondary: "#2FB6E1",
+        "secondary-red": "#E15B2F",
+        "border-light": "#E6E6E6",
+        "border-dark": "#586E75",
+        gradient: "#93A1A1",
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
-
+};

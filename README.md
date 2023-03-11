@@ -1,6 +1,6 @@
 # docs-ui
 
-Repository that provides the Antora UI and theme for the oNote
+Repository that provides the Antora UI and theme for the Evident Stack
 documentation site, based on the [default Antora UI
 Bundle](https://docs.antora.org/antora-ui-default/) modified to use
 Tailwind CSS.

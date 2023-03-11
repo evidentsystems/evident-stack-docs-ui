@@ -11,6 +11,15 @@ html {
   font-family: var(--body-font-family) !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font-family) !important;
+}
+
 @media screen and (min-width: 1024px) {
   html {
     font-size: var(--body-font-size--desktop);
@@ -39,7 +48,8 @@ a:active {
   background-color: none;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: disc;
 }
 
@@ -56,11 +66,13 @@ th {
   font-weight: var(--body-font-weight-bold);
 }
 
-em em { /* stylelint-disable-line */
+em em {
+  /* stylelint-disable-line */
   font-style: normal;
 }
 
-strong strong { /* stylelint-disable-line */
+strong strong {
+  /* stylelint-disable-line */
   font-weight: normal;
 }
 
